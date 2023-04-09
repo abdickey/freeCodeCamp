@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', Arial, sans-serif;
+            background-color: #1F1F1F;
+            color: #F2F2F2;
+            line-height: 1.6;
+        }
+
+        #survey-form {
+            max-width: 600px;
+            margin: 4rem auto;
+            padding: 2rem;
+            background-color: #2C2C2C;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+            border-radius: 10px;
+        }
+
+        h1 {
+            font-size: 2rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            font-size: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        label {
+            font-size: 1rem;
+            display: block;
+            margin-bottom: 0.5rem;
+            color: #AAA;
+        }
+
+        .options-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .option {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 0.75rem;
+            margin-bottom: 1.5rem;
+            background-color: #3C3C3C;
+            color: #F2F2F2;
+            border: 2px solid #4C4C4C;
+            border-radius: 5px;
+            font-size: 1rem;
+            outline: none;
+            transition: border-color 0.3s ease;
+        }
+
+        input[type="radio"], input[type="checkbox"] {
+            width: auto;
+            margin-bottom: 0;
+        }
+
+        input:focus, select:focus, textarea:focus {
+            border-color: #6C6C6C;
+        }
+
+        button {
+            font-size: 1rem;
+            font-weight: 600;
+            background-color: #1D90FF;
+            color: #fff;
+            padding: 0.75rem 1.5rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #1873CE;
+        }
+
+        .question-box {
+            background-color: #3C3C3C;
+            padding: 1rem;
+            border-radius: 5px;
+            margin-bottom: 1.5rem;
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid #4C4C4C;
+            margin-bottom: 1.5rem;
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            p {
+                font-size: 0.9rem;
+            }
+
+            label {
+                font-size: 0.9rem;
+            }
+
+            input, select, textarea {
+                font-size: 0.9rem;
+            }
+
+            button {
+                font-size: 0.9rem;
+            }
+        }
+
+</style>
+</head>
+<body>
+    <form id="survey-form">
+        <h1 id="title">Survey Form</h1>
+        <p id="description">Please complete this survey form to help us better understand your preferences.</p>
+        <label for="name" id="name-label">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            <label for="email" id="email-label">Email:</label>
+    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+    <label for="number" id="number-label">Age:</label>
+    <input type="number" id="number" name="number" min="1" max="120" placeholder="Enter your age" required>
+
+    <hr>
+    <label id="question1-label">Question 1:</label>
+    <div class="question-box" id="question1-box">
+        <div class="options-container">
+            <div class="option">
+                <input type="radio" id="option1-1" name="question1" value="option1" required>
+                <label for="option1-1">Option 1</label>
+            </div>
+            <div class="option">
+                <input type="radio" id="option1-2" name="question1" value="option2" required>
+                <label for="option1-2">Option 2</label>
+            </div>
+            <div class="option">
+                <input type="radio" id="option1-3" name="question1" value="option3" required>
+                <label for="option1-3">Option 3</label>
+            </div>
+        </div>
+    </div>
+
+    <label for="dropdown" id="question2-label">Question 2:</label>
+    <select id="dropdown" name="question2" required>
+        <option value="option1">Option 1</option>
+        <option value="option2">Option 2</option>
+        <option value="option3">Option 3</option>
+        <option value="option4">Option 4</option>
+    </select>
+
+    <label id="question3-label">Question 3:</label>
+    <div class="question-box" id="question3-box">
+        <div class="options-container">
+            <div class="option">
+                <input type="checkbox" id="option3-1" name="question3" value="option1" required>
+                <label for="option3-1">Option 1</label>
+            </div>
+            <div class="option">
+                <input type="checkbox" id="option3-2" name="question3" value="option2" required>
+                <label for="option3-2">Option 2</label>
+            </div>
+            <div class="option">
+                <input type="checkbox" id="option3-3" name="question3" value="option3" required>
+                <label for="option3-3">Option 3</label>
+            </div>
+            <div class="option">
+                <input type="checkbox" id="
+                option3-4" name="question3" value="option4" required>
+                <label for="option3-4">Option 4</label>
+            </div>
+        </div>
+    </div>
+
+    <label for="comments" id="comments-label">Additional Comments:</label>
+    <textarea id="comments" name="comments" rows="4" placeholder="Enter your comments here"></textarea>
+
+    <button type="submit" id="submit">Submit</button>
+</form>
+</body>
+</html>

@@ -1,0 +1,145 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Typography */
+body {
+  font-family: 'Arial', sans-serif;
+  color: #f0f0f0;
+  background-color: #212121;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #111;
+}
+
+header img {
+  max-height: 50px;
+}
+
+#nav-bar {
+  display: flex;
+  align-items: center;
+}
+
+#nav-bar ul {
+  display: flex;
+}
+
+#nav-bar li {
+  margin-left: 1rem;
+}
+
+/* Parallax Effect */
+.parallax {
+  background-image: url("background.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+.parallax h2 {
+  color: #fff;
+}
+
+/* Video */
+#video-section {
+  padding: 2rem;
+  text-align: center;
+}
+
+#video {
+  width: 100%;
+  max-width: 600px;
+  margin-top: 1rem;
+}
+
+/* Features, Benefits, and Pricing */
+#features,
+#benefits,
+#pricing {
+  padding: 2rem;
+  text-align: center;
+}
+
+#features ul,
+#benefits ul,
+#pricing ul {
+  margin-top: 1rem;
+  padding-left: 1rem;
+}
+
+/* Form */
+#form {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#form label,
+#form input[type="email"] {
+  margin-bottom: 1rem;
+}
+
+#form input[type="submit"] {
+  background-color: #3f51b5;
+  border: none;
+  color: #ffffff;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+#form input[type="submit"]:hover {
+  background-color: #1a237e;
+}
+
+/* Footer */
+footer {
+  padding: 1rem;
+  background-color: #111;
+  text-align: center;
+}
+
+footer ul {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+footer li {
+  margin-left: 1rem;
+}
